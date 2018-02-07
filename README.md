@@ -1,3 +1,3 @@
-# generator-readme-md
+# generator-github-project
 
-Yeoman generator for README.md files
+Yeoman generator for GitHub projects
