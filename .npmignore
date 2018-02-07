@@ -1,0 +1,18 @@
+coverage/
+npm-debug.log*
+lib/
+demo/
+node_modules/
+src/
+tests/
+.editorconfig
+.eslintrc
+.gitignore
+CONTRIBUTING.md
+nwb.config.js
+
+# Editor
+\#*\#
+.\#*
+*~
+.idea/
