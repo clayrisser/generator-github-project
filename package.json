@@ -16,17 +16,17 @@
     "contributing"
   ],
   "main": "app/index.js",
-  "files": ["app"],
+  "files": [
+    "app"
+  ],
   "scripts": {
-    "build":
-      "npm run clean && node ./node_modules/jnwb/lib/bin/nwb build && mkdir -p ./app && cp -r ./lib/* ./app",
+    "build": "npm run clean && node ./node_modules/jnwb/lib/bin/nwb build && mkdir -p ./app && cp -r ./lib/* ./app",
     "clean": "rm -rf ./app/*.js ./es ./lib ./demo",
     "link": "npm link && npm link generator-readme-md",
     "lint": "node ./node_modules/eslint/bin/eslint ./",
     "lint:fix": "node ./node_modules/eslint/bin/eslint --fix ./",
     "prepublish": "npm run build",
-    "start":
-      "npm run clean && npm run lint && npm run build && node ./node_modules/yo/lib/cli --destination=demo readme-md",
+    "start": "npm run clean && npm run lint && npm run build && node ./node_modules/yo/lib/cli --destination=demo readme-md",
     "test": "node ./node_modules/jnwb/lib/bin/nwb test",
     "test:coverage": "node ./node_modules/jnwb/lib/bin/nwb test --coverage",
     "test:watch": "node ./node_modules/jnwb/lib/bin/nwb test --server",
@@ -40,8 +40,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "yeoman-generator": "^1.0.0",
-    "yeoman-option-or-prompt":
-      "git+https://github.com/artefact-group/yeoman-option-or-prompt.git"
+    "yeoman-option-or-prompt": "git+https://github.com/artefact-group/yeoman-option-or-prompt.git"
   },
   "devDependencies": {
     "eslint": "^4.14.0",
