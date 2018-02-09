@@ -6,11 +6,6 @@ pipeline:
       - ./node_modules
     volumes:
       - /tmp/cache:/cache
-    when:
-      event: push
-      branch:
-        - master
-        - dev
 
   build:
     image: node:9.5.0-alpine
@@ -26,8 +21,3 @@ pipeline:
       - ./node_modules
     volumes:
       - /tmp/cache:/cache
-    when:
-      event: push
-      branch:
-        - master
-        - dev
