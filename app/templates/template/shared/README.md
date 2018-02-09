@@ -1,5 +1,7 @@
 # <%= name %>
 
+[![GitHub stars](https://img.shields.io/github/stars/<%= githubUsername %>/<%= name %>.svg?style=social&label=Stars)](<%= repository %>)
+
 <%= description %>
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
