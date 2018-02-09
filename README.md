@@ -4,7 +4,7 @@
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/generator-github-project)
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/generator-github-project?focus=wish)
 
-🎩 Yeoman generator for GitHub projects
+🎩 :octocat: Yeoman generator for GitHub projects
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
