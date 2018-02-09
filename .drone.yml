@@ -26,7 +26,7 @@ pipeline:
       - NPM_EMAIL=${NPM_EMAIL}
     commands:
       - /bin/drone-npm
-      - npm publish 2>&1
+      - npm publish 2>&1 || true
     when:
       event: push
       branch:
