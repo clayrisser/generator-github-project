@@ -15,7 +15,7 @@ pipeline:
       - npm run build
 
   publish:
-    image: npm
+    image: plugins/npm
     secrets:
       - npm_username
       - npm_password
