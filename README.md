@@ -48,7 +48,7 @@ Submit an [issue](https://github.com/jamrizzi/generator-github-project/issues/ne
 
 ## Screenshots
 
-[Contribute](https://github.com/jamrizzi/generator-github-project/blob/master/CONTRIBUTING.md) a screenshot
+![0002](https://user-images.githubusercontent.com/6234038/36050757-5c5e6900-0dad-11e8-94ed-065c533f1b3c.jpg)
 
 
 ## Contributing
