@@ -1,4 +1,4 @@
-![generator-github-project](https://user-images.githubusercontent.com/6234038/36049928-2b6b1bde-0daa-11e8-83dc-9751e83566d9.png)
+![generator-github-project](https://user-images.githubusercontent.com/6234038/36050178-16419548-0dab-11e8-9f7c-47b53f46702b.png)
 
 # generator-github-project
 
