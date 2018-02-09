@@ -1,0 +1,33 @@
+pipeline:
+  restore_cache:
+    image: drillster/drone-volume-cache:latest
+    restore: true
+    mount:
+      - ./node_modules
+    volumes:
+      - /tmp/cache:/cache
+    when:
+      event: push
+      branch:
+        - master
+        - dev
+
+  build:
+    image: node:9.5.0-alpine
+    entrypoint: []
+    commands:
+      - npm install
+      - npm run build
+
+  rebuild_cache:
+    image: drillster/drone-volume-cache:latest
+    rebuild: true
+    mount:
+      - ./node_modules
+    volumes:
+      - /tmp/cache:/cache
+    when:
+      event: push
+      branch:
+        - master
+        - dev
