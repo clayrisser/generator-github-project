@@ -1,6 +1,6 @@
 # generator-github-project
 
-[![NPM version][npm-image]][npm-url]
+[![npm](https://img.shields.io/npm/v/generator-github-project.svg)](https://www.npmjs.com/package/generator-github-project)
 
 :tophat: :octocat: Yeoman generator for GitHub projects
 
