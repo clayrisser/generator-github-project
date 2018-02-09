@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
 [![npm](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
 
-🎩 :octocat: Yeoman generator for GitHub projects
+> 🎩 :octocat: Yeoman generator for GitHub projects
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
