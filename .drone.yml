@@ -14,6 +14,22 @@ pipeline:
       - npm install
       - npm run build
 
+  publish:
+    image: node:9.5.0
+    secrets:
+      - npm_username
+      - npm_password
+      - npm_email
+    entrypoint: []
+    commands:
+      - (echo $NPM_USERNAME; echo $NPM_PASSWORD; echo $NPM_EMAIL) | npm adduser
+      - npm run build
+      - npm publish 2>&1
+    when:
+      event: push
+      branch:
+        - master
+
   rebuild_cache:
     image: drillster/drone-volume-cache:latest
     rebuild: true
