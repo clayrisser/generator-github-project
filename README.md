@@ -1,3 +1,5 @@
+![generator-github-project](https://user-images.githubusercontent.com/6234038/36049928-2b6b1bde-0daa-11e8-83dc-9751e83566d9.png)
+
 # generator-github-project
 
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/generator-github-project)
