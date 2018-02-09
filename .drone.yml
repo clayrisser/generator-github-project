@@ -15,16 +15,15 @@ pipeline:
       - npm run build
 
   publish:
-    image: node:9.5.0
+    image: npm
     secrets:
       - npm_username
       - npm_password
       - npm_email
-    entrypoint: []
-    commands:
-      - (echo $NPM_USERNAME; echo $NPM_PASSWORD; echo $NPM_EMAIL) | npm adduser
-      - npm run build
-      - npm publish 2>&1
+    environment:
+      - NPM_USERNAME=${NPM_USERNAME}
+      - NPM_PASSWORD=${NPM_PASSWORD}
+      - NPM_EMAIL=${NPM_EMAIL}
     when:
       event: push
       branch:
