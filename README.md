@@ -1,5 +1,7 @@
 # generator-github-project
 
+[![NPM version][npm-image]][npm-url]
+
 :tophat: :octocat: Yeoman generator for GitHub projects
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
