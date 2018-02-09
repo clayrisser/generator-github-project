@@ -1,6 +1,6 @@
-# generator-github-project
+# generator-github-project :octocat:
 
-Yeoman generator for github projects
+Yeoman generator for GitHub projects
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
@@ -21,11 +21,6 @@ sudo npm install -g yo generator-github-project
 ```
 
 
-## Dependencies
-
-* [NodeJS](https://nodejs.org)
-
-
 ## Usage
 
 Navigate to your project root and run the following command.
@@ -33,6 +28,11 @@ Navigate to your project root and run the following command.
 ```sh
 yo github-project
 ```
+
+
+## Dependencies
+
+* [NodeJS](https://nodejs.org)
 
 
 ## Support
