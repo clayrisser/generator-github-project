@@ -2,9 +2,10 @@
 
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/generator-github-project)
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/generator-github-project?focus=wish)
-[![npm](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
-[![npm](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
-[![GitHub stars](https://img.shields.io/github/stars/jamrizzi/generator-github-project.svg?style=social&label=Stars)](https://github.com/jamrizzi/generator-github-project)
+[![NPM](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
+[![NPM](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
+[![Drone](https://ci.jamrizzi.com/api/badges/jamrizzi/generator-github-project/status.svg)](https://ci.jamrizzi.com/jamrizzi/generator-github-project)
+[![GitHub Stars](https://img.shields.io/github/stars/jamrizzi/generator-github-project.svg?style=social&label=Stars)](https://github.com/jamrizzi/generator-github-project)
 
 > 🎩 :octocat: Yeoman generator for GitHub projects
 
