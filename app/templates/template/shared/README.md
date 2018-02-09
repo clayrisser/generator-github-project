@@ -6,10 +6,9 @@ Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
 <% if (features && features.length > 0) { %>
 ## Features
-<% for (var feature in features) { %>
-* <%= feature %><% } %>
-<% } %>
-<% if (demo && demo.length > 0) { %>
+<% for (var i in features) { %>
+* <%= features[i] %><% } %>
+<% } %><% if (demo && demo.length > 0) { %>
 ## Demo
 
 See a [demo](<%= demo %>)
@@ -29,34 +28,34 @@ See a [demo](<%= demo %>)
 
 ## Usage
 
-[Contribute](<%= repository %>/readme/blob/master/CONTRIBUTING.md) usage docs
+[Contribute](<%= repository %>/blob/master/CONTRIBUTING.md) usage docs
 
 
 ## Support
 
-Submit an [issue](https://github.com/<%= githubUsername %>/readme/issues/new)
+Submit an [issue](<%= repository %>/issues/new)
 
 
 ## Screenshots
 
-[Contribute](<%= repository %>/readme/blob/master/CONTRIBUTING.md) a screenshot
+[Contribute](<%= repository %>/blob/master/CONTRIBUTING.md) a screenshot
 
 
 ## Contributing
 
-Review the [guidelines for contributing](<%= repository %>/readme/blob/master/CONTRIBUTING.md)
+Review the [guidelines for contributing](<%= repository %>/blob/master/CONTRIBUTING.md)
 
 
 ## License
 
-[<%= license %> License](<%= repository %>/readme/blob/master/LICENSE)
+[<%= license %> License](<%= repository %>/blob/master/LICENSE)
 
 [<%= authorName %>](<%= authorUrl %>) &copy; <%= moment().format('YYYY') %>
 
 
 ## Changelog
 
-Review the [changelog](<%= repository %>/readme/blob/master/CHANGELOG.md)
+Review the [changelog](<%= repository %>/blob/master/CHANGELOG.md)
 
 
 ## Credits
