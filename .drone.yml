@@ -8,7 +8,7 @@ pipeline:
       - /tmp/cache:/cache
 
   build:
-    image: node:9.5.0-alpine
+    image: node:9.5.0
     entrypoint: []
     commands:
       - npm install
