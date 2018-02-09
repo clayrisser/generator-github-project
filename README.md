@@ -41,24 +41,24 @@ Submit an [issue](https://github.com/jamrizzi/generator-github-project/issues/ne
 
 ## Screenshots
 
-[Contribute](https://github.com/jamrizzi/generator-github-project/readme/blob/master/CONTRIBUTING.md) a screenshot
+[Contribute](https://github.com/jamrizzi/generator-github-project/blob/master/CONTRIBUTING.md) a screenshot
 
 
 ## Contributing
 
-Review the [guidelines for contributing](https://github.com/jamrizzi/generator-github-project/readme/blob/master/CONTRIBUTING.md)
+Review the [guidelines for contributing](https://github.com/jamrizzi/generator-github-project/blob/master/CONTRIBUTING.md)
 
 
 ## License
 
-[MIT License](https://github.com/jamrizzi/generator-github-project/readme/blob/master/LICENSE)
+[MIT License](https://github.com/jamrizzi/generator-github-project/blob/master/LICENSE)
 
 [Jam Risser](https://jam.jamrizzi.com) &copy; 2018
 
 
 ## Changelog
 
-Review the [changelog](https://github.com/jamrizzi/generator-github-project/readme/blob/master/CHANGELOG.md)
+Review the [changelog](https://github.com/jamrizzi/generator-github-project/blob/master/CHANGELOG.md)
 
 
 ## Credits
