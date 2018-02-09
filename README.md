@@ -1,4 +1,4 @@
-# ![generator-github-project](https://user-images.githubusercontent.com/6234038/36050178-16419548-0dab-11e8-9f7c-47b53f46702b.png)
+# [![generator-github-project](https://user-images.githubusercontent.com/6234038/36050178-16419548-0dab-11e8-9f7c-47b53f46702b.png)](https://github.com/jamrizzi/generator-github-project)
 
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/generator-github-project)
 [![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/generator-github-project?focus=wish)
