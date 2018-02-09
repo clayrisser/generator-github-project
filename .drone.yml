@@ -24,6 +24,8 @@ pipeline:
       - NPM_USERNAME=${NPM_USERNAME}
       - NPM_PASSWORD=${NPM_PASSWORD}
       - NPM_EMAIL=${NPM_EMAIL}
+    commands:
+      - npm publish 2>&1
     when:
       event: push
       branch:
