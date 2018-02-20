@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -15,26 +15,27 @@
     "license",
     "contributing"
   ],
-  "main": "app/index.js",
+  "main": "generators/app/index.js",
   "files": [
-    "app"
+    "generators"
   ],
   "scripts": {
-    "build": "npm run clean && node ./node_modules/jnwb/lib/bin/nwb build && mkdir -p ./app && cp -r ./lib/* ./app",
-    "clean": "rm -rf ./app/*.js ./es ./lib ./demo",
-    "link": "npm link && npm link generator-readme-md",
-    "lint": "node ./node_modules/eslint/bin/eslint ./",
-    "lint:fix": "node ./node_modules/eslint/bin/eslint --fix ./",
+    "build": "npm run clean && babel src -d generators/app",
+    "clean": "rm -rf demo generators/*/*.js",
+    "link": "npm link && npm link generator-github-project",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
     "prepublish": "npm run build",
-    "start": "npm run clean && npm run lint && npm run build && node ./node_modules/yo/lib/cli --destination=demo readme-md",
-    "test": "node ./node_modules/jnwb/lib/bin/nwb test",
-    "test:coverage": "node ./node_modules/jnwb/lib/bin/nwb test --coverage",
-    "test:watch": "node ./node_modules/jnwb/lib/bin/nwb test --server",
-    "unlink": "npm unlink generator-readme-md"
+    "start": "npm run clean && npm run lint && npm run build && yo --destination=demo github-project",
+    "unlink": "npm unlink generator-github-project"
   },
   "dependencies": {
-    "babel-runtime": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "empty-dir": "^0.2.1",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "fs-extra-promise": "^1.0.1",
     "git-user-email": "git+https://git@github.com/jamrizzi/git-user-email.git",
     "git-user-name": "^2.0.0",
     "lodash": "^4.17.4",
@@ -43,17 +44,31 @@
     "yeoman-option-or-prompt": "git+https://github.com/artefact-group/yeoman-option-or-prompt.git"
   },
   "devDependencies": {
-    "eslint": "^4.14.0",
-    "eslint-config-airbnb": "^16.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1",
-    "expect": "^22.0.3",
-    "jnwb": "^0.1.5",
     "yo": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "4"
+          }
+        }
+      ],
+      "stage-2"
+    ]
   },
   "author": "Jam Risser <jam@jamrizzi.com>",
   "homepage": "https://github.com/jamrizzi/generator-readme-md",
   "license": "MIT",
-  "repository": "https://github.com/jamrizzi/generator-readme-md"
+  "repository": "https://github.com/jamrizzi/generator-readme-md",
+  "eslintIgnore": [
+    "generators",
+    "demo"
+  ]
 }
