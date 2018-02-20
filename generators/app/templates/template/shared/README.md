@@ -1,5 +1,7 @@
 # <%= name %>
 
+[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/badge.svg?style=beer-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>)
+[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)
 [![GitHub stars](https://img.shields.io/github/stars/<%= githubUsername %>/<%= name %>.svg?style=social&label=Stars)](<%= repository %>)
 
 <%= description %>
@@ -71,4 +73,5 @@ A ridiculous amount of coffee :coffee: :coffee: :coffee: was consumed in the pro
 
 [Add some fuel](https://beerpay.io/<%= githubUsername %>/<%= name %>) if you'd like to keep me going!
 
-[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/badge.svg?style=beer-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>)  [![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)
+[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/badge.svg?style=beer-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>)
+[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)

@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb/base", "prettier"],
   "rules": {
     "comma-dangle": ["error", "never"],
     "jsx-a11y/href-no-hash": "off",
