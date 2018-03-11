@@ -1,10 +1,12 @@
 import 'babel-polyfill';
 import Generator from 'yeoman-generator';
-import moment from 'moment';
+import dateFns from 'date-fns';
+import path from 'path';
 import optionOrPrompt from 'yeoman-option-or-prompt';
 import {
   copy,
   guessEmail,
+  guessDestination,
   guessUsername,
   guessName,
   guessAuthorName
@@ -16,7 +18,7 @@ module.exports = class extends Generator {
       this.destinationRoot(this.options.destination);
     }
     this.context = {
-      moment
+      dateFns
     };
     this.optionOrPrompt = optionOrPrompt;
   }
@@ -30,6 +32,15 @@ module.exports = class extends Generator {
         default: guessName()
       }
     ]);
+    let { destination } = await this.optionOrPrompt([
+      {
+        type: 'input',
+        name: 'destination',
+        message: 'Destination:',
+        default: guessDestination(name, this.options.destination)
+      }
+    ]);
+    destination = path.resolve(destination);
     const { description, version, license } = await this.optionOrPrompt([
       {
         type: 'input',
@@ -41,7 +52,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'version',
         message: 'Version:',
-        default: 'v0.0.1'
+        default: '0.0.1'
       },
       {
         type: 'input',
@@ -141,15 +152,6 @@ module.exports = class extends Generator {
         url: dependencyUrl
       });
     }
-    const { template } = await this.optionOrPrompt([
-      {
-        type: 'list',
-        name: 'template',
-        message: 'Template',
-        choices: ['minimal'],
-        default: 'minimal'
-      }
-    ]);
     this.answers = {
       authorEmail,
       authorName,
@@ -157,6 +159,7 @@ module.exports = class extends Generator {
       demo,
       dependencies,
       description,
+      destination,
       features,
       githubUsername,
       homepage,
@@ -164,13 +167,14 @@ module.exports = class extends Generator {
       license,
       name,
       repository,
-      template,
       version
     };
     this.context = { ...this.context, ...this.answers };
   }
 
-  configuring() {}
+  configuring() {
+    this.destinationRoot(this.context.destination);
+  }
 
   default() {}
 

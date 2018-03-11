@@ -1,8 +1,9 @@
 import emptyDir from 'empty-dir';
 import gitUserEmail from 'git-user-email';
 import gitUserName from 'git-user-name';
+import path from 'path';
 
-export function isEmpty() {
+export async function isEmpty() {
   return emptyDir.sync(process.cwd());
 }
 
@@ -16,6 +17,11 @@ export function guessUsername(email) {
   return 'some-username';
 }
 
+export function guessDestination(name, destination = process.cwd()) {
+  if (!emptyDir.sync(process.cwd())) destination = name;
+  return path.resolve(destination);
+}
+
 export function guessName() {
   const matches = process.cwd().match(/[^\/]+$/g);
   if (matches.length > 0) return matches[0];
@@ -27,26 +33,23 @@ export function guessAuthorName() {
 }
 
 export function copy(yo) {
-  return Promise.all([
-    yo.fs.copyTpl(
-      yo.templatePath('template/shared/README.md'),
-      yo.destinationPath('README.md'),
-      { ...yo.context }
-    ),
-    yo.fs.copyTpl(
-      yo.templatePath('template/shared/CHANGELOG.md'),
-      yo.destinationPath('CHANGELOG.md'),
-      { ...yo.context }
-    ),
-    yo.fs.copyTpl(
-      yo.templatePath('template/shared/CONTRIBUTING.md'),
-      yo.destinationPath('CONTRIBUTING.md'),
-      { ...yo.context }
-    ),
-    yo.fs.copyTpl(
-      yo.templatePath('template/shared/LICENSE'),
-      yo.destinationPath('LICENSE'),
-      { ...yo.context }
-    )
-  ]);
+  yo.fs.copyTpl(
+    yo.templatePath('template/shared/README.md'),
+    yo.destinationPath('README.md'),
+    yo.context
+  );
+  yo.fs.copyTpl(
+    yo.templatePath('template/shared/CHANGELOG.md'),
+    yo.destinationPath('CHANGELOG.md'),
+    yo.context
+  );
+  yo.fs.copy(
+    yo.templatePath('template/shared/CONTRIBUTING.md'),
+    yo.destinationPath('CONTRIBUTING.md')
+  );
+  yo.fs.copyTpl(
+    yo.templatePath('template/shared/LICENSE'),
+    yo.destinationPath('LICENSE'),
+    yo.context
+  );
 }

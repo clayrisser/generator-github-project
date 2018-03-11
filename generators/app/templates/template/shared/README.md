@@ -54,7 +54,7 @@ Review the [guidelines for contributing](<%= repository %>/blob/master/CONTRIBUT
 
 [<%= license %> License](<%= repository %>/blob/master/LICENSE)
 
-[<%= authorName %>](<%= authorUrl %>) &copy; <%= moment().format('YYYY') %>
+[<%= authorName %>](<%= authorUrl %>) &copy; <%= new Date().getFullYear() %>
 
 
 ## Changelog
