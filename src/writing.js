@@ -1,4 +1,4 @@
-export default function writing(yo) {
+export default async function writing(yo) {
   yo.fs.copyTpl(
     yo.templatePath('template/shared/README.md'),
     yo.destinationPath('README.md'),

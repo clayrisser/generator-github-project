@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -16,7 +16,9 @@
     "contributing"
   ],
   "main": "generators/app/index.js",
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "build": "npm run clean && babel src -d generators/app",
     "clean": "rm -rf demo generators/*/*.js",
@@ -24,8 +26,7 @@
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./",
     "prepublish": "npm run build",
-    "start":
-      "npm run clean && npm run lint && npm run build && yo --destination=demo github-project",
+    "start": "npm run clean && npm run lint && npm run build && yo --destination=demo github-project",
     "unlink": "npm unlink generator-github-project"
   },
   "dependencies": {
@@ -34,8 +35,7 @@
     "lodash": "^4.17.4",
     "project-guess": "0.0.4",
     "yeoman-generator": "^1.0.0",
-    "yeoman-option-or-prompt":
-      "git+https://github.com/artefact-group/yeoman-option-or-prompt.git"
+    "yeoman-option-or-prompt": "git+https://github.com/artefact-group/yeoman-option-or-prompt.git"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -64,5 +64,8 @@
   "homepage": "https://github.com/jamrizzi/generator-readme-md",
   "license": "MIT",
   "repository": "https://github.com/jamrizzi/generator-readme-md",
-  "eslintIgnore": ["generators", "demo"]
+  "eslintIgnore": [
+    "generators",
+    "demo"
+  ]
 }
