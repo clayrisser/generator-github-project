@@ -6,7 +6,7 @@
 
 > <%= description %>
 
-Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
+Please ★ this repo if you found it useful ★ ★ ★
 
 <% if (features && features.length > 0) { %>
 ## Features
@@ -54,7 +54,7 @@ Review the [guidelines for contributing](<%= repository %>/blob/master/CONTRIBUT
 
 [<%= license %> License](<%= repository %>/blob/master/LICENSE)
 
-[<%= authorName %>](<%= authorUrl %>) &copy; <%= new Date().getFullYear() %>
+[<%= authorName %>](<%= authorUrl %>) © <%= new Date().getFullYear() %>
 
 
 ## Changelog
@@ -69,7 +69,7 @@ Review the [changelog](<%= repository %>/blob/master/CHANGELOG.md)
 
 ## Support on Beerpay (actually, I drink coffee)
 
-A ridiculous amount of coffee :coffee: :coffee: :coffee: was consumed in the process of building this project.
+A ridiculous amount of coffee ☕ ☕ ☕ was consumed in the process of building this project.
 
 [Add some fuel](https://beerpay.io/<%= githubUsername %>/<%= name %>) if you'd like to keep me going!
 

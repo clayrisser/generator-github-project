@@ -69,3 +69,5 @@ typings/
 # Application
 demo/
 generators/*/*.js
+/docs/build
+/env
