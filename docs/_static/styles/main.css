@@ -1,5 +1,5 @@
 a {
-  color: #FF9900;
+  color: #ff9900;
 }
 
 a:visited {
@@ -20,6 +20,10 @@ a:hover {
 
 .wy-menu-vertical a:active {
   background-color: #dd8800;
+}
+
+.wy-menu-vertical a {
+  color: #dd8800;
 }
 
 .wy-nav-top, .wy-side-nav-search {
