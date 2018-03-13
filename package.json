@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -36,7 +36,6 @@
     "date-fns": "^1.29.0",
     "generator-license": "^5.2.0",
     "lodash": "^4.17.4",
-    "project-guess": "0.0.4",
     "yeoman-generator": "^1.0.0",
     "yo-base-prompts": "0.0.4",
     "yo-option-or-prompt": "0.0.5"
