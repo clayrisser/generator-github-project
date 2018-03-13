@@ -13,9 +13,4 @@ export default async function writing(yo) {
     yo.templatePath('template/shared/CONTRIBUTING.md'),
     yo.destinationPath('CONTRIBUTING.md')
   );
-  yo.fs.copyTpl(
-    yo.templatePath('template/shared/LICENSE'),
-    yo.destinationPath('LICENSE'),
-    yo.context
-  );
 }

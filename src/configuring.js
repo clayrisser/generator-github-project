@@ -1,3 +1,3 @@
 export default async function configuring(yo) {
-  yo.destinationRoot(yo.context.destination);
+  yo.destinationRoot(yo.answers.destination);
 }

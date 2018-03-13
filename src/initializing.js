@@ -1,9 +1,9 @@
 import dateFns from 'date-fns';
-import yeomanOptionOrPrompt from 'yeoman-option-or-prompt';
+import yoOptionOrPrompt from 'yo-option-or-prompt';
 
-export default async function initialize(yo) {
+export default async function initializing(yo) {
   yo.context = {
     dateFns
   };
-  yo.optionOrPrompt = yeomanOptionOrPrompt;
+  yo.optionOrPrompt = yoOptionOrPrompt;
 }

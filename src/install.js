@@ -1,3 +1,3 @@
-export default async function installing(yo) {
+export default async function install(yo) {
   return yo;
 }
