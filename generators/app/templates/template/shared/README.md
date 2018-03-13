@@ -4,7 +4,7 @@
 [![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)
 [![GitHub stars](https://img.shields.io/github/stars/<%= githubUsername %>/<%= name %>.svg?style=social&label=Stars)](<%= repository %>)
 
-<%= description %>
+> <%= description %>
 
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
@@ -54,7 +54,7 @@ Review the [guidelines for contributing](<%= repository %>/blob/master/CONTRIBUT
 
 [<%= license %> License](<%= repository %>/blob/master/LICENSE)
 
-[<%= authorName %>](<%= authorUrl %>) &copy; <%= moment().format('YYYY') %>
+[<%= authorName %>](<%= authorUrl %>) &copy; <%= new Date().getFullYear() %>
 
 
 ## Changelog
