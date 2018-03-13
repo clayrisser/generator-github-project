@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -22,6 +22,8 @@
   "scripts": {
     "build": "npm run clean && babel src -d generators/app",
     "clean": "rm -rf demo generators/*/*.js",
+    "docs:serve": "make serve",
+    "docs:build": "make build",
     "link": "npm link && npm link generator-github-project",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./",
@@ -63,9 +65,9 @@
     ]
   },
   "author": {},
-  "homepage": "https://github.com/jamrizzi/generator-readme-md",
+  "homepage": "https://github.com/jamrizzi/generator-github-project",
   "license": "MIT",
-  "repository": "https://github.com/jamrizzi/generator-readme-md",
+  "repository": "https://github.com/jamrizzi/generator-github-project",
   "eslintIgnore": [
     "generators",
     "demo"
