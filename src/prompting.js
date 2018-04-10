@@ -91,15 +91,15 @@ export default async function prompting(yo) {
     repository,
     version
   };
+  yo.composeWith(require.resolve('generator-editorconf'), {
+    destination: yo.answers.destination
+  });
   yo.composeWith(require.resolve('generator-license'), {
     email: yo.answers.authorEmail,
     license: yo.answers.license,
     name: yo.answers.authorName,
     output: path.resolve(yo.answers.destination, 'LICENSE'),
     website: yo.answers.authorUrl
-  });
-  yo.composeWith(require.resolve('generator-editorconfig'), {
-    destination: yo.answers.destination
   });
   yo.context = { ...yo.context, ...yo.answers };
 }
