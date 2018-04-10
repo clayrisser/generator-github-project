@@ -98,5 +98,8 @@ export default async function prompting(yo) {
     output: path.resolve(yo.answers.destination, 'LICENSE'),
     website: yo.answers.authorUrl
   });
+  yo.composeWith(require.resolve('generator-editorconfig'), {
+    destination: yo.answers.destination
+  });
   yo.context = { ...yo.context, ...yo.answers };
 }
