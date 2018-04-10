@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -34,6 +34,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "date-fns": "^1.29.0",
+    "generator-editorconf": "0.0.2",
     "generator-license": "^5.2.0",
     "lodash": "^4.17.4",
     "yeoman-generator": "^1.0.0",
@@ -69,6 +70,7 @@
   "repository": "https://github.com/jamrizzi/generator-github-project",
   "eslintIgnore": [
     "generators",
-    "demo"
+    "demo",
+    "docs"
   ]
 }
