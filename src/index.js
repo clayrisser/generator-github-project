@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import 'idempotent-babel-polyfill';
 import Generator from 'yeoman-generator';
 import configuring from './configuring';
 import conflicts from './conflicts';
