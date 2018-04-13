@@ -1,6 +1,6 @@
 {
   "name": "generator-github-project",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Yeoman generator for GitHub projects",
   "keywords": [
     "yeoman-generator",
@@ -32,11 +32,10 @@
     "unlink": "npm unlink generator-github-project"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "date-fns": "^1.29.0",
-    "generator-editorconf": "0.0.4",
+    "generator-editorconf": "0.1.0",
     "generator-license": "^5.2.0",
-    "idempotent-babel-polyfill": "0.0.2",
+    "idempotent-babel-polyfill": "0.0.3",
     "lodash": "^4.17.4",
     "yeoman-generator": "^1.0.0",
     "yo-base-prompts": "0.1.3",
