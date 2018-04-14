@@ -92,6 +92,7 @@ export default async function prompting(yo) {
     version
   };
   yo.composeWith(require.resolve('generator-editorconf'), {
+    name: yo.answers.name,
     destination: yo.answers.destination
   });
   yo.composeWith(require.resolve('generator-license'), {
