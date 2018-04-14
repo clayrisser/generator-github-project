@@ -1,7 +1,5 @@
 # <%= name %>
 
-[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/badge.svg?style=beer-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>)
-[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)
 [![GitHub stars](https://img.shields.io/github/stars/<%= githubUsername %>/<%= name %>.svg?style=social&label=Stars)](<%= repository %>)
 
 > <%= description %>
@@ -67,11 +65,11 @@ Review the [changelog](<%= repository %>/blob/master/CHANGELOG.md)
 * [<%= authorName %>](<%= authorUrl %>) - Author
 
 
-## Support on Beerpay (actually, I drink coffee)
+## Support on Liberapay
 
 A ridiculous amount of coffee ☕ ☕ ☕ was consumed in the process of building this project.
 
-[Add some fuel](https://beerpay.io/<%= githubUsername %>/<%= name %>) if you'd like to keep me going!
+[Add some fuel](https://liberapay.com/<%= githubUsername %>/donate) if you'd like to keep me going!
 
-[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/badge.svg?style=beer-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>)
-[![Beerpay](https://beerpay.io/<%= githubUsername %>/<%= name %>/make-wish.svg?style=flat-square)](https://beerpay.io/<%= githubUsername %>/<%= name %>?focus=wish)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/<%= githubUsername %>.svg?style=flat-square)](https://liberapay.com/<%= githubUsername %>/donate)
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/<%= githubUsername %>.svg?style=flat-square)](https://liberapay.com/<%= githubUsername %>/donate)
