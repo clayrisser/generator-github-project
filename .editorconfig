@@ -11,13 +11,13 @@ trim_trailing_whitespace = true
 charset = utf-8
 indent_size = 4
 
-[*.{js,json}]
+[*.{js,jsx,json}]
 charset = utf-8
 
 [*.{md,rst}]
 charset = utf-8
 trim_trailing_whitespace = false
 
-[Makefile]
+[{m,M}akefile]
 charset = utf-8
 indent_style = tab
