@@ -19,11 +19,12 @@ a:hover {
 }
 
 .wy-menu-vertical a:active {
-  background-color: #dd8800;
+  background-color: #dd8800 !important;
+  color: #ffffff !important;
 }
 
 .wy-menu-vertical a {
-  color: #dd8800;
+  color: #dd8800 !important;
 }
 
 .wy-nav-top, .wy-side-nav-search {
@@ -32,4 +33,12 @@ a:hover {
 
 .wy-side-nav-search>div.version {
   color: rgba(255,255,255,0.5);
+}
+
+.local-toc ul > li > ul {
+  display: none !important;
+}
+
+.local-toc ul > li[class=current] > ul {
+  display: inline !important;
 }

@@ -57,7 +57,7 @@ project = 'generator-github-project'
 
 pygments_style = 'sphinx'
 
-release = '0.1.7'
+release = '0.2.8'
 
 source_parsers = {
     '.md': CommonMarkParser
@@ -73,13 +73,13 @@ texinfo_documents = [(
     'Generator Github Project Documentation',
     author,
     'generator_github_project',
-    'Yeoman generator for GitHub projects',
+    '🎩 Yeoman generator for GitHub projects',
     'Miscellaneous'
 )]
 
 todo_include_todos = False
 
-version = '0.1.7'
+version = '0.2.8'
 
 def setup(app):
     app.add_config_value('recommonmark_config', {

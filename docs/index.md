@@ -1,10 +1,8 @@
-[![generator-github-project](https://user-images.githubusercontent.com/6234038/36050178-16419548-0dab-11e8-9f7c-47b53f46702b.png)](https://github.com/jamrizzi/generator-github-project)
+# generator-github-project
 
-[![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/generator-github-project?focus=wish)
-[![NPM](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
-[![NPM](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
-[![Drone](https://ci.jamrizzi.com/api/badges/jamrizzi/generator-github-project/status.svg)](https://ci.jamrizzi.com/jamrizzi/generator-github-project)
-[![GitHub Stars](https://img.shields.io/github/stars/jamrizzi/generator-github-project.svg?style=social&label=Stars)](https://github.com/jamrizzi/generator-github-project)
+[![npm](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
+[![npm](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)]( [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project))
+[![GitHub stars](https://img.shields.io/github/stars/codejamninja/generator-github-project.svg?style=social&label=Stars)](https://github.com/codejamninja/generator-github-project)
 
 > 🎩 Yeoman generator for GitHub projects
 
@@ -17,61 +15,61 @@ Please ★ this repo if you found it useful ★ ★ ★
 * Generate license
 * Generate contributing guide
 * Generate changelog
-* Beerpay integration
+* Generate editorconfig
 
 
 # Installation
 
 ```sh
-sudo npm install -g yo generator-github-project
-```
-
-
-# Usage
-
-Navigate to your project root and run the following command.
-
-```sh
-yo github-project
+npm install -g yo generator-github-project
 ```
 
 
 # Dependencies
 
 * [NodeJS](https://nodejs.org)
+* [Yeoman](http://yeoman.io)
+
+
+# Usage
+
+```sh
+yo github-project
+```
 
 
 # Support
 
-Submit an [issue](https://github.com/jamrizzi/generator-github-project/issues/new)
+Submit an [issue](https://github.com/codejamninja/generator-github-project/issues/new)
 
 
 # Contributing
 
-Review the [guidelines for contributing](https://github.com/jamrizzi/generator-github-project/blob/master/CONTRIBUTING.md)
+Review the [guidelines for contributing](https://github.com/codejamninja/generator-github-project/blob/master/CONTRIBUTING.md)
 
 
 # License
 
-[MIT License](https://github.com/jamrizzi/generator-github-project/blob/master/LICENSE)
+[MIT License](https://github.com/codejamninja/generator-github-project/blob/master/LICENSE)
 
-[Jam Risser](https://jam.jamrizzi.com) © 2018
+[Jam Risser](https://codejam.ninja) © 2018
 
 
 # Changelog
 
-Review the [changelog](https://github.com/jamrizzi/generator-github-project/blob/master/CHANGELOG.md)
+Review the [changelog](https://github.com/codejamninja/generator-github-project/blob/master/CHANGELOG.md)
 
 
 # Credits
 
-* [Jam Risser](https://jam.jamrizzi.com) - Author
+* [Jam Risser](https://codejam.ninja) - Author
 
 
-# Support on Beerpay
+# Support on Liberapay
 
 A ridiculous amount of coffee ☕ ☕ ☕ was consumed in the process of building this project.
 
-[Add some fuel](https://beerpay.io/jamrizzi/generator-github-project) if you'd like to keep me going!
+[Add some fuel](https://liberapay.com/codejamninja/donate) if you'd like to keep me going!
 
-[![Beerpay](https://beerpay.io/jamrizzi/generator-github-project/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/generator-github-project?focus=wish)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/codejamninja.svg?style=flat-square)](https://liberapay.com/codejamninja/donate)
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/codejamninja.svg?style=flat-square)](https://liberapay.com/codejamninja/donate)
