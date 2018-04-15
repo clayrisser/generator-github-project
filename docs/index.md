@@ -1,5 +1,3 @@
-# generator-github-project
-
 [![npm](https://img.shields.io/npm/v/generator-github-project.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project)
 [![npm](https://img.shields.io/npm/dt/generator-github-project.svg?style=flat-square)]( [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/generator-github-project))
 [![GitHub stars](https://img.shields.io/github/stars/codejamninja/generator-github-project.svg?style=social&label=Stars)](https://github.com/codejamninja/generator-github-project)
