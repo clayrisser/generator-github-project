@@ -28,7 +28,7 @@ export default async function prompting(yo) {
     repository: true
   });
   const features = [];
-  while (true) {
+  for (;;) {
     const { feature } = await yo.prompt([
       {
         type: 'input',
@@ -52,7 +52,7 @@ export default async function prompting(yo) {
     }
   ]);
   const dependencies = [];
-  while (true) {
+  for (;;) {
     const { dependencyName } = await yo.prompt([
       {
         type: 'input',

@@ -71,3 +71,4 @@ demo/
 generators/*/*.js
 /docs/build
 /env
+package-lock.json*

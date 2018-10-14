@@ -4,29 +4,30 @@
 
 > <%= description %>
 
-Please ★ this repo if you found it useful ★ ★ ★
+Please ★ this repo if you found it useful ★ ★ ★<% if (features && features.length > 0) { %>
 
-<% if (features && features.length > 0) { %>
+
 ## Features
 <% for (var i in features) { %>
-* <%= features[i] %><% } %>
-<% } %><% if (demo && demo.length > 0) { %>
+* <%= features[i] %><% } %><% } %><% if (demo && demo.length > 0) { %>
+
+
 ## Demo
 
-See a [demo](<%= demo %>)
-<% } %>
-<% if (installation && installation.length > 0) { %>
+See a [demo](<%= demo %>)<% } %><% if (installation && installation.length > 0) { %>
+
+
 ## Installation
 
 ```sh
 <%= installation %>
-```
-<% } %>
-<% if (dependencies && dependencies.length > 0) { %>
+```<% } %><% if (dependencies && dependencies.length > 0) { %>
+
+
 ## Dependencies
 <% for (var i in dependencies) { %>
-* [<%= dependencies[i].name %>](<%= dependencies[i].url %>)<% } %>
-<% } %>
+* [<%= dependencies[i].name %>](<%= dependencies[i].url %>)<% } %><% } %>
+
 
 ## Usage
 
