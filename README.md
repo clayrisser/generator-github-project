@@ -6,6 +6,8 @@
 
 > 🎩 Yeoman generator for GitHub projects
 
+![](assets/generator-github-project.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 
